@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nurtree – AI Tree Protection</title>
+<style>
+body {
+  font-family: Arial;
+  background: #e9f5ec;
+  margin: 0;
+}
+.header {
+  background: #1e7f43;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  max-width: 800px;
+  background: white;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+button {
+  background: #1e7f43;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f0fdf4;
+  border-left: 5px solid #1e7f43;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+<h1>Nurtree</h1>
+<p>AI-powered Tree Health & Protection System</p>
+</div>
+
+<div class="container">
+<h3>Upload a Tree Photo</h3>
+<input type="file" id="file"><br><br>
+<button onclick="analyze()">Analyze Tree</button>
+
+<div id="output"></div>
+</div>
+
+<script>
+function analyze(){
+  document.getElementById("output").innerHTML = `
+  <div class="result">
+  <h3>Tree Health Analysis</h3>
+  <p><b>Tree Survival Score:</b> 62%</p>
+  <p>Status: At Risk</p>
+  <hr>
+  <h3>Tree Guardian AI</h3>
+  <p>⚠ Dust & Construction Activity Detected</p>
+  <p>Alert sent to authorities.</p>
+  </div>
+  `;
+}
+</script>
+
+</body>
+</html>
